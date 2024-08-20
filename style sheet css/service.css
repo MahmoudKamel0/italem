@@ -1,0 +1,205 @@
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       text-decoration: none !important;
+       font-family: "Poppins", sans-serif;
+}
+:root {
+       font-size   : 10px;
+       --transition: 0.5s;
+   
+       --primary   : #313131;
+       --dark      : var(--primary);
+   
+       --main      : #fff;
+       --white       : var(--main);
+   
+       --index-big : 10;
+       --index-mid : 5;
+       --index-sma : 1;
+}
+body * {
+       font-size: 1.6rem;
+       color: var(--dark);
+}
+   
+/* public classes */
+.title {
+       margin-bottom: 10px;
+       font-size: 5rem;
+       font-weight: bolder;
+       text-transform: uppercase;
+}
+.paragraph {
+       width: 90%;
+       margin: auto;
+       line-height: 30px;
+}
+
+/*-- Start Section Header 
+--------------------------------*/  
+.navigation {
+       top: 0;
+       width: 100%;
+       padding: 5px 20px;
+       background: #fff !important;
+       border-bottom: 1px solid #31313121;
+       z-index: var(--index-big);
+}
+      
+       .navigation menu {
+           list-style: none;
+       }
+      
+       .navigation menu li {
+           padding: 3px 2px;
+           border-radius: 20px;
+       }
+   
+       .navigation menu li:not(:last-child):hover {
+           background: #eee;
+       }
+   
+       .navigation menu li a {
+           margin: 0px 20px;
+           font-size: 1.5rem;
+       }
+   
+       .navigation menu li:last-child {
+           margin-left: 10px;
+           background: var(--primary);
+       }
+   
+       .navigation menu li:last-child:hover {
+           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       }
+   
+       .navigation menu li:last-child a {
+           color: var(--white);
+       }
+   
+       .navigation button {
+           height: 40px;
+           width: 40px;
+           background: var(--primary);
+           border-radius: 50%;
+           border: none;
+       }
+   
+       .navigation :is(button:hover , button:active)  {
+           background: var(--primary) !important;
+       }
+   
+       .navigation button i {
+           font-size: 1.7rem;
+           color: var(--white);
+       }
+       /* mobile responsive media */
+       @media screen and (max-width: 991px){     
+           .navigation menu {
+               margin-top: 15px;
+           }
+   
+           .navigation menu li {
+               margin: 5px 0px;
+           }
+   
+           .navigation menu li:last-child {
+               margin-left: 0px;
+           }
+       }
+
+
+
+/*-- Start Section service
+--------------------------------*/
+h2 {
+       margin-top: 160px;
+       text-align: center;
+}
+
+p {
+       text-align: center;
+       color: #777;
+}
+#service {
+       margin: 50px 0px;
+       padding: 50px;
+       background: #2f3e46;
+   }
+
+   
+       #service .cards {
+           margin-top: 60px !important;
+       }
+   
+       #service .item {
+           margin: 10px 0px;
+           padding: 20px;
+       }
+   
+       #service .card {
+           height: 100%;
+           padding: 50px;
+           border-radius: 30px;
+       }
+   
+       #service .card i {
+           height: 50px;
+           width: 50px;
+           margin-bottom: 20px;
+           padding: 35px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 3rem;
+           color: var(--white);
+           background: #354f52;
+           border-radius: 50%;
+       }
+   
+       #service .card h3 {
+           font-size: 2.4rem;
+           font-weight: bold;
+       }
+   
+       #service .card p {
+           text-align: left;
+       }
+       /* mobile responsive media */
+       @media only screen and (max-width: 768px) {
+           #service {
+               padding: 2px;
+           }
+       }
+
+
+/*-- Start Section service
+--------------------------------*/
+#restaurant-solutions {
+    padding-inline: 60px;
+}
+       #restaurant-solutions h3 {
+              margin-top: 50px;
+              font-size: 2rem;
+              font-size: bold;
+       }
+
+       #restaurant-solutions ul {
+              padding: 10px 60px;
+       }
+
+       #restaurant-solutions ul li {
+              margin: 10px 0;
+       }
+
+/* Start Section Footer
+----------------------------------*/
+footer {
+       margin-top: 70px;
+       padding: 30px 0;
+       text-align: center;
+       background: var(--dark);
+       color: var(--white);
+}

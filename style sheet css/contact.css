@@ -1,0 +1,167 @@
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       text-decoration: none !important;
+       font-family: "Poppins", sans-serif;
+}
+:root {
+       font-size   : 10px;
+       --transition: 0.5s;
+
+       --primary   : #313131;
+       --dark      : var(--primary);
+
+       --main      : #fff;
+       --white       : var(--main);
+
+       --index-big : 10;
+       --index-mid : 5;
+       --index-sma : 1;
+}
+body * {
+       font-size: 1.6rem;
+       color: var(--dark);
+}
+
+/*-- Start Section Navigation bar  
+--------------------------------*/ 
+.navigation {
+       width: 100%;
+       padding: 5px 20px;
+       background: #fff !important;
+       border-bottom: 1px solid #31313121;
+       z-index: var(--index-big);
+       top: 0;
+}
+
+       .navigation menu {
+              list-style: none;
+       }
+
+       .navigation menu li {
+              padding: 3px 2px;
+              border-radius: 20px;
+       }
+
+       .navigation menu li:not(:last-child):hover {
+              background: #eee;
+       }
+
+       .navigation menu li a {
+              margin: 0px 20px;
+              font-size: 1.5rem;
+       }
+
+       .navigation menu li:last-child {
+              margin-left: 10px;
+              background: var(--primary);
+       }
+
+       .navigation menu li:last-child:hover {
+              box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       }
+
+       .navigation menu li:last-child a {
+              color: var(--white);
+       }
+
+       .navigation button {
+              height: 40px;
+              width: 40px;
+              background: var(--primary);
+              border-radius: 50%;
+              border: none;
+       }
+
+       .navigation :is(button:hover , button:active)  {
+              background: var(--primary) !important;
+       }
+
+       .navigation button i {
+              font-size: 1.7rem;
+              color: var(--white);
+       }
+       /* mobile responsive media */
+       @media screen and (max-width: 991px){     
+              .navigation menu {
+                     margin-top: 15px;
+              }
+
+              .navigation menu li {
+                     margin: 5px 0px;
+              }
+
+              .navigation menu li:last-child {
+                     margin-left: 0px;
+              }
+       }
+
+
+/*  Alert
+-------------------------- */
+.alert {
+       margin-top: 74px;
+       background: #538d22;
+       color: #eee;
+}
+       .alert i {
+              margin-inline: 10px;
+              font-size: 20px;
+              color: #eee;
+       }
+
+/* title
+-------------------------- */
+.title {
+       margin: 100px auto 60px;
+       padding: 70px;
+       background: #171717;
+       border-radius: 20px;
+       text-align: center;
+}
+
+       .title h1 {
+              font-size: 4rem;
+              font-weight: bold;
+              color: #eee;
+       }
+
+
+/* Form
+-------------------------- */
+form {
+       padding: 35px !important;
+       border: 1px solid #0003;
+       border-radius: 20px;
+}
+       form .name input {
+              width: 49%;
+       }
+
+       form input {
+              padding: 10px 10px;
+              margin: 10px 0;
+              width: 100%;
+              outline: none;
+              border: none;
+              border-bottom: 1px solid #0003;
+       }
+
+       form button {
+              margin-top: 25px;
+              padding: 10px 30px !important;
+              font-size: 1.5rem !important;
+              border-radius: 50px !important;
+       }
+
+
+/* Start Section Footer
+----------------------------------*/
+footer {
+       margin-top: 70px;
+       padding: 30px 0;
+       text-align: center;
+       background: var(--primary);
+       color: var(--white);
+}
